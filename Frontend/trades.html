@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading System - Trades</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="header-wrap">
+        <div class="brand">Trade<span>Bridge</span></div>
+        <p class="header-subtext">Execute orders and manage history</p>
+      </div>
+    </header>
+
+    <nav class="top-nav">
+      <a href="/">Home</a>
+      <a href="/login.html">Login</a>
+      <a href="/register.html">Register</a>
+      <a href="/portfolio.html">Portfolio</a>
+      <a class="active" href="/trades.html">Trades</a>
+      <a href="/chat.html">Chatbot</a>
+      <a href="/news.html">News</a>
+    </nav>
+
+    <main>
+      <section class="card">
+        <div class="section-head">
+          <h2>Order Panel</h2>
+          <p>Place buy/sell/hold orders</p>
+        </div>
+        <form id="tradeForm" class="grid-three">
+          <select name="action" required>
+            <option value="buy">Buy</option>
+            <option value="sell">Sell</option>
+            <option value="hold">Hold</option>
+          </select>
+          <input name="symbol" placeholder="Symbol (AAPL)" required />
+          <input name="quantity" type="number" min="1" step="1" placeholder="Quantity" required />
+          <button type="submit">Execute</button>
+        </form>
+        <button id="loadTradesBtn" class="btn-light">Load Transactions</button>
+        <pre id="tradesOutput"></pre>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-wrap">
+        <p class="muted">© 2026 TradeBridge. Built for learning and growing.</p>
+        <div class="footer-links">
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

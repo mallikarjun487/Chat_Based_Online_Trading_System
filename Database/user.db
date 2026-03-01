@@ -1,0 +1,2 @@
+{"name":"mallikarjuna","email":"mallikothapalli477@gmail.com","passwordHash":"$2a$10$lDLwJ84qv7U7dejyisR2MOhF7HVmsM72WAGCSfE4uFF9JdrgOP.AW","role":"user","isActive":true,"cashBalance":100000,"holdings":{},"createdAt":"2026-03-01T07:51:10.481Z","_id":"4n5I4uq0BpMIB1eR"}
+{"name":"System Admin","email":"admin@trade.local","passwordHash":"$2a$10$bkq.CNtgY3GJ5ZzKX.xcseTUO7u.yzbaNJKZfPgoXlmVEoGVZSAwa","role":"admin","isActive":true,"cashBalance":0,"holdings":{},"createdAt":"2026-02-28T12:19:00.060Z","_id":"y2Q5eh0VRrsSfhIf"}

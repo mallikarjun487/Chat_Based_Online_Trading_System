@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading System - News</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="header-wrap">
+        <div class="brand">Trade<span>Bridge</span></div>
+        <p class="header-subtext">Live market updates and headlines</p>
+      </div>
+    </header>
+
+    <nav class="top-nav">
+      <a href="/">Home</a>
+      <a href="/login.html">Login</a>
+      <a href="/register.html">Register</a>
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/trades.html">Trades</a>
+      <a href="/chat.html">Chatbot</a>
+      <a class="active" href="/news.html">News</a>
+    </nav>
+
+    <main>
+      <section class="card">
+        <div class="section-head">
+          <h2>Financial News</h2>
+          <p>Pulled from API with automatic fallback</p>
+        </div>
+        <button id="loadNewsBtn" class="btn-light">Refresh News</button>
+        <div id="newsOutput" class="news-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-wrap">
+        <p class="muted">© 2026 TradeBridge. Built for learning and growing.</p>
+        <div class="footer-links">
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

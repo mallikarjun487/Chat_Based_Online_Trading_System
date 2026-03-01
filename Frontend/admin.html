@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading System - Admin</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="header-wrap">
+        <div class="brand">Trade<span>Bridge</span></div>
+        <p class="header-subtext">Admin console for user control</p>
+      </div>
+    </header>
+
+    <nav class="top-nav">
+      <a href="/">Home</a>
+      <a href="/login.html">Login</a>
+      <a href="/register.html">Register</a>
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/trades.html">Trades</a>
+      <a href="/chat.html">Chatbot</a>
+      <a href="/news.html">News</a>
+      <a class="active" href="/admin.html">Admin</a>
+    </nav>
+
+    <main>
+      <section class="card">
+        <div class="section-head">
+          <h2>User Management</h2>
+          <p>Update status, role, and profile name</p>
+        </div>
+        <p>Login as admin: <code>admin@trade.local / Admin@123</code></p>
+        <button id="loadUsersBtn" class="btn-light">Load Users</button>
+        <form id="adminUpdateForm" class="grid-three">
+          <input name="id" placeholder="User ID" required />
+          <select name="field" required>
+            <option value="isActive">isActive</option>
+            <option value="role">role</option>
+            <option value="name">name</option>
+          </select>
+          <input name="value" placeholder="New value" required />
+          <button type="submit">Update User</button>
+        </form>
+        <pre id="adminOutput"></pre>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
